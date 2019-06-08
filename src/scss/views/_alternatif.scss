@@ -1,0 +1,7 @@
+.alternate{
+    display: flex;
+    align-items: center
+}
+>*{
+    @include respond-to(min-width, $sm){width: calc();}
+}

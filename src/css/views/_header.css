@@ -1,0 +1,19 @@
+header {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline; }
+  header .logo {
+    width: 200px;
+    height: 150px;
+    float: left;
+    background: green; }
+  header nav {
+    width: calc(100%-200px); }
+  header ul li {
+    background: pink; }
+    header ul li.active {
+      background: blue; }
+  header ul:hover li {
+    opacity: 0.8; }
+    header ul:hover li:hover {
+      opacity: 1; }

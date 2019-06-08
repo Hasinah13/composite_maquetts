@@ -1,0 +1,140 @@
+.center{
+    text-align: center;
+    padding: 10px; 
+}
+/*=========== gradient ligne horizontal==============*/
+.line.horrizontal{
+    &::before {
+            content:"";
+            width:2px;
+            height:100px;
+            margin-top:-50px;
+            background: linear-gradient(to top,  #1e5799 0%,#76c1ff 0%,#6477ff 100%);
+            position: absolute;
+            transform: rotate(90deg); 
+                }
+}
+/*=========== gradient ligne vertical==============*/
+.line.verticals{
+    padding: 40px;
+    padding-top: 100px;
+    &::before {
+            content:"";
+            width:2px;
+            height:80px;
+            margin-top:-40px;
+            background: linear-gradient(to top,  #1e5799 0%,#76c1ff 0%,#6477ff 100%); 
+            position: absolute;
+                }
+}
+.upercas{
+    text-transform: uppercase;
+
+}
+/*=========== gradient text==============*/
+.gradient-text {
+background: linear-gradient(to right,  #b8e4ff 0%,#9b76ff 100%); 
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/*===========le circle gradient avec background ==============*/
+.circle-background{
+    padding: 40px;
+    padding-top: 100px;
+    &::before {
+            content:"";
+            width:80px;
+            height:80px;
+            border-radius: 50%;
+            margin-top:-40px;
+            margin-left:-40px;
+            background: linear-gradient(to right,  #1e5799 0%,#76c1ff 0%,#6477ff 100%); 
+            position: absolute;
+
+               
+            }
+}
+.totals-smaller-circle{
+    margin-left: 40%;
+    margin-top: 50px;
+    @media (min-width:600px){ 
+        margin-left: 47%;
+        
+    } 
+.smaller{
+        padding: 15px;
+        &::before {
+            content:"";
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+            position: absolute;
+        }
+       
+    }
+}
+.violets{
+    border-radius: 50%;
+    background-color: #9979ff;
+}
+.terquoises{
+    border-radius: 50%;
+    background-color: #6477ff;
+}
+.blues{
+    border-radius: 50%;
+    background-color: #76c1ff;
+}
+/*===========le carré gradient qui devait etre un circle mais je n'arrive pas à le faire circle  avec border gradient ==============*/
+.circle{
+    border-radius:50%;
+    width:80px;
+    height:80px;
+    border:2px solid ;
+    position: absolute; 
+    left:43%;
+     @include circle(#79ccff,#9b74ff); 
+     @media (min-width:600px){ 
+        left:48%;
+    }  
+     &.typo-circle{
+        left:60%;
+        margin-left:-60px;
+        margin-top: 80px;
+        @media (min-width:600px){ 
+            left:48%;
+            margin-top:-60px;
+        } 
+     }  
+}
+/*===========  back gradient text==============*/
+.typoback-gradient{
+      background: linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+      color:#fff;
+      padding:0px 10px;
+      &h1{
+        font-size: 16px;
+            @media (min-width:600px){ 
+                font-size: 72px;
+                padding:10px 20px;
+            } 
+      }
+}
+/*=========== les marge pour les logo ==============*/
+  
+.marge{
+    padding-top:100px;
+}
+/*=========== pourbyou can creat avant dernier==============*/
+.small-typo{
+    font-size:24px;
+    margin-left:40px;
+    color:$color-grey3;
+    font-weight:400;
+    @media (min-width:600px){ 
+        margin-right:120px;
+        
+    } 
+}
+
+

@@ -1,0 +1,35 @@
+
+/*============  les granads div terquoise===============*/
+.big.div-up,
+.big.div-down{
+    width: 105%;
+    height: 600px;
+    background-color: #6270ff;
+}
+/*============ le texte entre les granads div terquoise===============*/
+.large-text{
+    padding: 20px;
+    
+    @media (min-width:600px){ 
+        padding-left: 20px;
+        margin-top: 30px;   
+    } 
+    @media (min-width:700px){ 
+        padding-left: 120px;
+        margin-top: 100px;  
+    }        
+}
+/*============ section ===============*/
+.section{
+    width: 100%;
+    background-color:$color-beig;
+    padding-bottom: 200px;   
+}
+/*============ Colon blanc avec text vertical===============*/
+div.laste-col{
+    margin-top: 200px;
+     background-color:$color-white;
+    padding: 200px 50px  50px 30px;
+       
+}
+

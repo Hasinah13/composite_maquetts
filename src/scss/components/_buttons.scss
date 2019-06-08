@@ -1,0 +1,95 @@
+
+.row.button{
+    display: flex;
+    justify-content: center;  
+}
+/*=========== H squares================*/
+.hsquares{
+    text-align: center;
+    &h2{
+        font-size: 34px;
+        font-family: 'BwModelica';
+        font-weight: 700;   
+    }
+    &h3{
+        font-size: 12px;
+        color: #838383;
+        font-family:'BwModelica';
+        font-weight: 400; 
+
+
+    }
+}
+/*=========== BUTTONS squares================*/
+button.squares{
+    color:$secondary;
+    
+    &.full{
+        background-color: $color2;
+
+    } 
+    &.border{
+    border: 3px solid transparent;
+    color: $primary;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #79ccff, #9b74ff);
+    }
+}
+/*===========LES COMMMUN BUTTONS================*/
+button.squares,
+button.Soft-rounded,
+button.Rounded{
+    padding: 25px;
+    font-size:12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px; 
+}
+/*===========Soft-rounded================*/
+button.Soft-rounded{
+border-radius:20px;
+color: $secondary;
+    &.full{
+        background-color: $color2;
+
+    } 
+}
+/*===========Rounded================*/
+.Rounded{
+    border-radius:30px;
+    color:$secondary;
+    &.full{
+        background-color: $color2;
+    } 
+}
+/*===========button-image================*/
+.button-image{
+    width: 7%;
+    float: right;
+    margin-right: 20px;  
+}
+
+
+/*=========== BUTTONS nonback================*/
+button.nonback{
+    border-radius:20px;
+    color: $primary;
+    border: 3px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #79ccff, #9b74ff);
+
+}
+/*=========== BUTTONS nonback.border-radiuS================*/
+button.nonback.border-radius{
+    border-radius:30px;
+    color: $primary;
+    border: 3px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #79ccff, #9b74ff);
+}
+
+
+    

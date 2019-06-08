@@ -1,0 +1,62 @@
+
+* { box-sizing: border-box; }
+body{
+    margin: 0 auto; 
+}
+/*============ logo ===============*/
+header{
+    $logowidth:30px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    .logo{
+        width: 50px;
+        height: 50px;
+        float:left; /* il prend le primary color parceque il 
+        est le dernier si le blue le dernier il prendera le blue*/
+        background: $primary;
+        img{width: 150px;
+        }  
+    }
+    /*============ la nav ===============*/
+    ul{
+        padding: 0; 
+        margin: 0;
+        list-style:none ;
+        display: flex;
+        float: right;
+        li{
+            display:block; 
+            margin: 10px; 
+            a{
+                text-decoration: none;
+                color: $color6;
+                .icon-phone{ 
+                   background-color:$color2; 
+                   padding: 24px;
+
+                }
+            }
+        }  
+    }
+    /*============ le header ===============*/
+    .accordions-titre,
+    .accordions{
+    width: 100%;
+    height: 300px;
+    margin: auto 0;
+    background-color:$color2; 
+    float: left;
+    text-align: center;
+    padding-top: 100px;
+    color: $secondary;
+    font-size: 41px;
+        h1{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            @media (min-width:600px){ 
+                font-size: 72px;
+            } 
+        }
+    }
+
+}

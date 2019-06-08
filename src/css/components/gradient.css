@@ -1,0 +1,23 @@
+.gradient--blue-pruble {
+  background: -moz-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -webkit-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -o-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: linear-gradient(45deg, #79ccff 0%, #9b74ff 100%); }
+
+.gradient--turquoise-pruble {
+  background: -moz-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -webkit-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -o-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: linear-gradient(45deg, #79ccff 0%, #9b74ff 100%); }
+
+.gradient--red-megenta {
+  background: -moz-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -webkit-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -o-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: linear-gradient(45deg, #79ccff 0%, #9b74ff 100%); }
+
+.gradient--green-blue {
+  background: -moz-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -webkit-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: -o-linear-gradient(45deg, #79ccff 0%, #9b74ff 100%);
+  background: linear-gradient(45deg, #79ccff 0%, #9b74ff 100%); }

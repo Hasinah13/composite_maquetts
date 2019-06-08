@@ -1,0 +1,12 @@
+@mixin respond-to($prop,$query) {
+    @media ($prop:$query) {
+        @content
+        
+    }
+    
+}
+
+
+
+
+

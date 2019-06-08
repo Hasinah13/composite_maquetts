@@ -1,0 +1,19 @@
+
+/*============les imports==========*/
+@import "common/variables";// toujours en premier si non il le prend pas 
+@import "common/mixins/mixin";// toujours en premier si non il le prend pas 
+@import "common/grid/grid";
+@import "components/gradient";
+@import "views/accordion";
+@import "components/buttons";
+@import "views/message_box";
+@import "views/alternatif";
+@import "views/header";
+@import "views/typography";
+@import "views/headlines";
+@import "views/body";
+@import "views/footer";
+@import "common/mixins/absolute";
+@import "views/text_image";
+
+

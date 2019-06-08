@@ -1,0 +1,40 @@
+
+/*===========container================*/
+.container{
+    width: calc(100% - 30px);
+    max-width: $container_max;
+    margin: 0 auto;
+    &.contenaire--fluid{
+        max-width: none;
+    }
+}
+/*===========les h ================*/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+h5{
+    font-size: 15px;
+    font-weight: 400;
+    color: $color-grey;
+}
+h3{
+    font-size: 30px;
+    color: $color6;
+}
+/*===========les p ================*/
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:$color-grey3;
+}
+p.sans-titre{
+    margin-top: 180px;
+}
+
+
+
+
+
+
+

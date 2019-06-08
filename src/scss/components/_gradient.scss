@@ -1,0 +1,134 @@
+@mixin gradient ($start_color, $end_color){
+    background:-moz-linear-gradient(45deg,$start-color 0%, $end_color 100%);
+    background:-webkit-linear-gradient(45deg,$start-color 0%, $end_color 100%);
+    background:linear-gradient(45deg,$start-color 0%, $end_color 100%);
+}
+.gradient{
+    &--pink-somon{@include gradient(#da9191,#ff26d9);}
+    &--blue-pruble{@include gradient(#79ccff,#9b74ff);}
+    &--turquoise-pruble{@include gradient(#00e7ff,#9b74ff);}
+    &--red-megenta{@include gradient(#ffce79,#9b74ff);}
+    &--green-blue{@include gradient(#79fb92,#9b74ff);}
+    &--yellow-red{@include gradient(#ffcb3b,#ff0e69);}
+    &--turquois-violet{@include gradient(#00fff0,#d322ff);}
+    &--green-yellow{@include gradient(#79ff7c,#ffbd4a);}
+    &--brown-blue{@include gradient(#de9285,#6866ff);}
+    &--bluelight-blue{@include gradient(#00ffd8,#007eff);}
+    &--pink-violet{@include gradient(#ff18ab,#6e03ff);}
+    &--pink-brown{@include gradient(#ff2d72,#ffab79);}
+    
+    &-demo{
+        height: 400px;
+        margin: 20px;
+    }
+  
+}
+/*===================================gradient border avec 1 stretch=========================================*/
+@mixin gradient-border ($start_color, $end_color){
+    -webkit-border-image: 
+      -webkit-gradient(45deg,$start-color 0%, $end_color 100%)1 stretch;
+    -webkit-border-image: 
+      -webkit-linear-gradient(45deg,$start-color 0%, $end_color 100%)1 stretch;
+    -moz-border-image:
+      -moz-linear-gradient(45deg,$start-color 0%, $end_color 100%)1 stretch;  
+      border-image:
+      linear-gradient(45deg,$start-color 0%, $end_color 100%) 1 stretch;
+
+}
+/*===================================gradient border radius=========================================*/
+/*=======jai essayé  de faire un border de cercle gradient en suivant la logique mais ne marche pas=========*/
+@mixin circle ($start_color, $end_color){
+    -webkit-border-image: 
+      -webkit-gradient(0deg,$start-color 0%, $end_color 100%)1 stretch;
+    -webkit-border-image: 
+      -webkit-linear-gradient(0deg,$start-color 0%, $end_color 100%)1 stretch;
+    -moz-border-image:
+      -moz-linear-gradient(0deg,$start-color 0%, $end_color 100%)1 stretch;  
+      border-image:
+      linear-gradient(0deg,$start-color 0%, $end_color 100%) 1 stretch;
+
+}
+
+/*======================================gradient background sans 1 stretch======================================*/
+@mixin gradient-background ($start_color, $end_color){
+  -webkit-background: 
+    -webkit-gradient(45deg,$start-color 0%, $end_color 100%);
+  -webkit-background: 
+    -webkit-linear-gradient(45deg,$start-color 0%, $end_color 100%);
+  -moz-background:
+    -moz-linear-gradient(45deg,$start-color 0%, $end_color 100%);  
+    background:
+    linear-gradient(45deg,$start-color 0%, $end_color 100%) ;
+
+}
+/*===================================gradient border=========================================*/
+.gradient-border {
+    border-width: 3px;
+    border-style: solid;
+    
+}
+.gradient-border{
+  &:hover{
+    @include gradient-border(#79ccff,#9b74ff);
+  }
+  &.active{
+    @include gradient-border(#79ccff,#9b74ff);
+  }
+}
+/*=======jai essayé  de faire un border de cercle gradient en suivant la logique mais ne marche pas=========*/
+.circle{
+  border-radius:50%;
+  width:80px;
+  height:80px;
+  border:2px solid ;
+ @include circle(#79ccff,#9b74ff);
+}
+/*==============================gradient-second ==============================================*/
+.gradient.second {
+    border-width: 3px;
+    border-style: solid;
+    @include gradient-border(#79ccff,#9b74ff);
+    border: none;
+    &:hover{
+      @include gradient-background(#79ccff,#9b74ff);
+      color:$color_white;
+
+      &::before {
+        background-color: $color_white;
+      }
+
+    }
+    &.active{
+      @include gradient-background(#79ccff,#9b74ff);
+      color:$secondary;
+    }
+}
+/*===============================gradient-borde=============================================*/
+.nonback.gradient-border {
+  color: $primary;
+  border-radius: 20px;
+  @include gradient-border(#00e7ff,#6270ff);
+ 
+} 
+/*====================================== gradients backgrounds ======================================*/
+
+.back.gradient.second{
+  color:$secondary;
+  @include gradient-background(#00e7ff,#6270ff); 
+}
+.back.shadow.gradient.second{
+  box-shadow: 0px 0px 15px grey;
+}
+.barre.virtcal{
+  @include gradient-border(#79ccff,#9b74ff);
+}
+/*===========================================================================*/
+.color{
+      &--purple{
+    color:$color3;
+    }
+}
+
+
+
+

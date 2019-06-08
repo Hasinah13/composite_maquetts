@@ -1,0 +1,111 @@
+h1.centre{
+    text-align:center;
+}
+/*============ barre vertical===============*/
+.barre.vertcal{
+    position: relative;
+    padding-left: 35px;
+    &:before {
+        content:"";
+        width: 3px;
+        height: 150px;
+        margin-left: -35px;
+        position: absolute;
+        @include gradient-background(#79ccff,#9b74ff);
+            }  
+}
+/*============ les petite rectangl background===============*/
+.rectangle1,
+.rectangle2{
+    &:before {
+        margin-left: -30px;
+        margin-top: -27px;
+        content:"";
+        width: 25px;
+        height: 60px;
+        position: absolute;
+        transform: rotate(10deg);
+        @include gradient-background(#79ccff,#9b74ff);
+        &.bise{background-color: #79ccff;
+
+        }
+       
+            }      
+}
+.rectangle1{
+    margin-left: 30px;
+
+    &:before {
+        content:"";
+        width: 25px;
+        height: 60px;
+        position: absolute;
+        transform: rotate(10deg);
+        @include gradient-background(#79ccff,#9b74ff);
+        margin-top: -22px;
+       
+            }           
+}
+p.cube{
+    position: relative;
+    z-index: 3;
+
+}
+/*============ background span L  et l penché ===============*/
+
+.letter-capital span{
+    text-transform: uppercase;
+    &.capital{
+        color:$color2;
+        font-size: 60px;
+    }
+    &.capital2{
+        color: $color2;
+        font-size: 60px;
+    }
+    &.capital4{
+        background: -webkit-linear-gradient(#79ccff,#9b74ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+div.capital2{
+    color: $color2;
+    font-size: 60px;
+    text-transform: uppercase; 
+    margin-top: 50px;  
+}
+
+/*============ span dans le p ===============*/
+.fermentum{
+    background-color:$color2;
+    color:$color_white;
+}
+.various{
+    background-color:$color5;
+    color:$color_white;
+}
+.fermentum2,
+.various2{
+    color:$color2;
+}
+/*============ les grands rectangls background L ===============*/
+.dropcap{
+    font-size: 60px;
+    width: 80px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    &.capital5{
+        border-radius: 50%;
+    }
+    &.background-colored{
+        @include gradient-background(#79ccff,#9b74ff);
+          color:$color_white;
+    }
+
+}
+  
+
+

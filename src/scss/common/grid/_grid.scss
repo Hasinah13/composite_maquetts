@@ -1,0 +1,32 @@
+/* ==========container==========*/
+.container{
+    width: calc(100% - 30px);
+    max-width: $container_max;
+    margin: 0 auto;
+    &.contenaire--fluid{
+        max-width: none;
+    }
+}
+/* ========== row ==========*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -#{$gutter}px;
+}
+/* ========== grid ==========*/
+@mixin grid_builder($device_size:'xs') {
+    @for $i from 1 through $total-col{
+        .col-#{$device_size}-#{$i}{
+            $calc:((100% / $total_col) * $i);
+            $total-gutter: $gutter * 2;
+
+            width: calc(#{$calc} - #{$total-gutter}px);
+            margin: 0 #{$gutter}px;
+        }
+    }    
+}
+@include grid_builder();
+@include respond-to(min-width,$sm){ @include grid_builder('sm'); }
+@include respond-to(min-width,$md){ @include grid_builder('md'); }
+@include respond-to(min-width,$lg){ @include grid_builder('lg'); }

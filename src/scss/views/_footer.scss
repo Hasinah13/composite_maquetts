@@ -1,0 +1,34 @@
+
+/*===========footer================*/
+.footer{
+    width: 100%;
+    margin: auto 0;
+    background-color:$primary;
+    color:$color2;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    .row.footer{
+        display: flex;
+        flex-direction:row;
+        justify-content:flex-end; 
+        align-items: center;
+        margin-top:100px;
+        .resaux-sociaux i{
+         font-size: 15px;
+         padding: 30px;
+         }
+        .resaux-left p{
+            padding-left:200px;
+            color:$color2;
+            img{margin-right: 15px;
+            padding-top: 10px; }
+            
+        }     
+     }  
+}
+.footer.logo img{
+    width:5%;
+}
+
+
+

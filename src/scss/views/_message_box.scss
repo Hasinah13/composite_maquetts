@@ -1,0 +1,125 @@
+/*=============pour tous les boxs==============*/
+.boxs{
+    margin-top:20px;
+    padding-top:1px;
+    &h2{
+        padding-bottom:3px;
+
+    }
+}
+/*===========box big avec background================*/
+.big.back.lign1,
+.big.back.lign2{ 
+    color: $secondary;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 170px;
+    .box{
+        color:$secondary;
+    } 
+    &.terquoise{
+        background-color:  $color2; 
+    }
+    &.pink{
+        background-color: $color5; 
+    }
+    &.violet{
+        background-color: $color3;
+    }
+    &.yellow{
+        background-color: $color4;
+    }  
+}
+/*===========box big avec border================*/
+.big.box.lign1,
+.big.box.lign2{ 
+    padding: 10px;
+    width: 100%;
+    height: 170px;
+    &.terquoise{
+        border: 3px solid;
+        border-color:  $color2; 
+    }
+    &.pink{
+        border: 3px solid;
+        border-color: $color5; 
+    }
+    &.violet{
+        border: 3px solid;
+        border-color: $color3;
+    }
+    &.yellow{
+        border: 3px solid;
+        border-color: $color4;
+    }
+    h2{ color:$primary;  
+    } 
+}
+/*==========box small avec background=================*/
+.small.back.lign4,
+.small.back.lign1,
+.small.back.lign2{ 
+    color: $secondary;
+    padding-top:1px;
+    width: 100%;
+    height: 60px;
+    padding-left:30px;
+
+    &.terquoise{
+        background-color:  $color2; 
+    }
+    &.pink{
+        background-color: $color5; 
+    }
+    &.violet{
+        background-color: $color3;
+    }
+    &.yellow{
+        background-color: $color4;
+    }  
+}
+/*=========== box small avec border================*/
+.small.box.lign1,
+.small.box.lign2{ 
+    width: 100%;
+    height: 60px;
+    padding-left:30px;
+    &.terquoise{
+        border: 3px solid;
+        border-color:  $color2; 
+    }
+    &.pink{
+        border: 3px solid;
+        border-color: $color5; 
+    }
+    &.violet{
+        border: 3px solid;
+        border-color: $color3;
+    }
+    &.yellow{
+        border: 3px solid;
+        border-color: $color4;
+    }
+    h2{ color:$primary;
+
+    } 
+}
+/*===========box small long avec background================*/
+.small.back.lign4{
+    text-align: center;
+    &.terquoise{
+        background-color:  $color2; 
+    }
+    &.pink{
+        background-color: $color5; 
+    }
+    &.violet{
+        background-color: $color3;
+    }
+    &.yellow{
+        background-color: $color4;
+    }
+}
+
+

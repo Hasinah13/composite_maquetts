@@ -1,0 +1,299 @@
+/*============ les images ===============*/
+img.image,
+.text-image,
+img.About-us{
+    width: 100%;
+    margin-top: 50px;  
+}
+a{
+    font-family: 'Open Sans', sans-serif;
+}
+/*============ le commun des accordions===============*/
+li.management{
+    background: #f1f6f9;
+    padding: 20px;
+    color: #252525;
+    list-style: none;
+    margin: 5px;
+    &.tabs-nav-item--active,
+     &:hover{
+        background-color: $color2;
+        color: $color_white;
+        &::before {
+            content:"";
+            width: 10px;
+            height: 100%;
+            background: linear-gradient(to top,  #1e5799 0%,#76c1ff 0%,#6477ff 100%); 
+            position: absolute;
+            top:0px;
+            left: 0px;
+    
+                }
+         }  
+      
+    &+li.fourth{
+        margin-right: 3px;
+    }  
+}
+li{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif; 
+} 
+.accordions-buttons{
+    padding-bottom: 50px;
+    li {
+        position: relative; 
+        }
+}
+/*============ accordion fourth ===============*/
+.management.fourth{
+    -webkit-appearance:none;
+    background-color:$color_white;
+    &:hover{
+        background-color: $color2;
+        color:$color_white; 
+    }    
+}
+/*============ accordions fifth===============*/
+.management.fifth{
+    background-color: $color2;
+    padding: 20px 45px;
+    color: $color_white;
+    &.tabs-nav-item--active,
+    &:hover{
+        background-color: #f1f6f9;
+        border: none;
+        color: #00031d;
+    }
+    &.tabs-nav-item--active-whit,
+    &:hover{
+        background-color: #fff;
+        border: 2px solid;
+        border-bottom: none;
+        border-color: #dee6ea;
+        color: #00031d;
+    }
+} 
+/*============ accordion deroulant ===============*/
+.dederoul-accordion{
+   
+    border: 4px solid #f1f6f9;
+    display: flexbox;
+    flex: wrap;
+    padding: 40px;
+    margin-bottom: 100px;
+    margin-top:-54px;
+   &.border-colored{
+    background-color:#f1f6f9;
+   }
+   &:hover{
+    box-shadow: 0px 0px 15px grey;
+   }
+}
+/*============ accordion deroulant ===============*/
+.accordion-text-center{
+    text-align: center;
+}
+.total-background{
+    background-color:#f1f6f9;
+    padding: 20px 30px;
+    padding-left: 0;
+}
+/*============ accordiond option ===============*/
+.option{
+    padding: 80px;
+    background-color: #00031d;
+    color: $color_white;
+    display: block;
+    flex-grow: 3;
+    margin: 0 ;
+    margin-right: 0;
+    align-items: center;
+    text-align: center;  
+}
+/*============ accordiond service ===============*/
+.service{
+    height: 200px;
+    background-color: #00031d;
+    color: $color_white;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    padding-left: 170px;
+    @media (min-width:600px){ 
+        padding-left: 100px;
+    } 
+}
+.accordions-buttons.inline{
+    align-items: center;
+}
+/*============ accordiond hover ===============*/
+.service:hover,
+.option:hover{
+    background-color: $color2;
+}
+.border:hover{
+    background-color:$color_white;
+    border-color: #8b8b8b;
+    border-top: none;
+    box-shadow: 0px 0px 15px grey;
+    transition: all 0.8s ease-in-out;
+}
+/*===========================*/
+.row{
+    display: flex;
+    flex-direction:row;
+    li{
+        text-align: center;
+        justify-content: space-between;
+        flex-grow: 3;
+    }
+}
+.fifth-total{
+    margin-top: -95px;
+}
+.pharagraphe-befor-button{
+    margin-bottom: 200px;
+}
+div.imagedown.col-xs-12.col-sm-6{
+    float: none;
+    margin-top:0;
+    @media (min-width:600px){ 
+    float: right;
+    margin-top: -200px;
+    }
+}
+
+/*============ accordiond  box h-right + box h-right===============*/
+.h-right-textbox-lign3{
+    font-size: 15px;
+}
+.h-left-textbox-lign3{
+    border: 2px solid ;
+    padding: 20px 5px;
+    font-size: 15px;
+    padding-left: 50px;
+}
+.accordion-end-paragraphe{
+    margin-top: 50px;
+   line-height: 30px;
+}
+.end-row{
+    margin-top: 100px;
+}
+/*============ accordiond  background===============*/
+.gradient.second{
+    background-color: #f1f6f9;
+    border: none;  
+}
+.h-left-textbox-lign3.gradient-border,
+.h-left-textbox-lign3.gradient.second{
+    border-color: #dae2e7;
+    position: relative;
+    &::before {
+        content:"";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #dae2e7;
+        position: absolute;
+        left: 20px;
+        margin-top:7px;
+    }
+    &.active,
+    &:hover {
+        &::before {
+           @include gradient-background(#79ccff,#9b74ff); 
+        }
+    }
+    
+    &.bleu{
+       background-color: $color2;
+    }
+    &.light{
+        background-color: $color_white;
+    }  
+}
+.h-left-textbox-lign3.gradient.second {
+    &div.croix,
+    &.active,
+    &:hover {
+        &::before {
+            background: $color_white;
+        }
+    } 
+}
+/*============ accordiond service ===============*/
+.liste li{
+    position: relative;
+    &:hover::before {
+        content:"";
+        width: 100%;
+        height: 10px;
+        margin: 0;
+        margin-top: 30px;
+        background: linear-gradient(to left,  #1e5799 0%,#76c1ff 0%,#6477ff 100%);
+        position: absolute;
+            }
+}
+/*============ accordiond le coix (+) ===============*/
+.croix{
+    width: 30px;
+    height: 30px; 
+    transform: scale(1.4);
+    margin-right: 40px;
+    margin-left: auto;
+    color:$color_white;
+
+    &::before {
+     background: $primary;
+      position: absolute;
+      display:block;
+      content:'';
+      width: 35%;
+      height: 3%;
+      top: 23%;
+      left: 7%;
+      transform: rotate(90deg);  
+    }
+    &::after {
+      background: $primary;
+      position: absolute;
+      display:block;
+      content:'';
+      width: 3%;
+      height: 35%;
+      left: 23%;
+      top: 7%;
+      transform: rotate(90deg); 
+    } 
+  }
+.croix{
+    &.active,
+    &:hover {
+        &::before {
+            background:$color_white;
+        }
+    }
+}
+/*============ accordiond service ===============*/
+.croix{
+    &.active,
+    &:hover {
+        &::after {
+            background: $color_white;
+        }
+    }
+}
+/*============ accordions pour le java script ===============*/
+.accordion-end-paragraphe{
+    display: none;
+}
+.tabs-content--inactive{
+    display: none;
+}
+
+
+
+
+
